@@ -7,13 +7,14 @@ import Editor from '@/views/Editor'
 const router: RouteObject[] = [
   {
     path: '/',
-    element: <MainLayout />,
+    Component: MainLayout,
     children: [
-      { path: '', element: <Home /> },
-      { path: 'teamplate/:id', id: 'templateDetail', element: <TemplateDetail /> },
+      { path: '', Component: Home },
+      { path: 'teamplate/:id', id: 'templateDetail', Component: TemplateDetail },
     ],
   },
-  { path: '/editor', id: 'editor', element: <Editor /> },
+
+  { path: '/editor', id: 'editor', Component: Editor },
 ]
 
 export default router

@@ -17,7 +17,7 @@ const layoutStyle: React.CSSProperties = {
   background: '#fff',
 }
 
-function MainLayout() {
+const MainLayout: React.FC = () => {
   return (
     <Layout style={layoutStyle}>
       <Header style={headerStyle}>
